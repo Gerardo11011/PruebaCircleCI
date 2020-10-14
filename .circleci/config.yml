@@ -8,9 +8,8 @@ jobs:
     working_directory: ~/PruebaCircleCI
     steps:
       - checkout
-      - run: cd PruebaCircleCI/backend
-      - run: npm install --save
-      - run: npm test
+      - run: cd backend && npm install
+      - run: cd backend && npm test
 
 # Orchestrate our job run sequence
 workflows:
