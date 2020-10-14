@@ -8,7 +8,6 @@ jobs:
     working_directory: ~/backend
     steps:
       - checkout
-      - run: cd backend
       - run: npm install --save
       - run: npm test
 
