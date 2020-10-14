@@ -9,5 +9,7 @@ jobs:
       - run: npm install
       - run: npm test
 workflows:
-  jobs:
-    - construir
+  version: 2.1
+    oneTest:
+      jobs:
+        - construir
