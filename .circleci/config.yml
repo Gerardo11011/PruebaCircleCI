@@ -5,11 +5,13 @@ jobs:
   test:
     docker:
       - image: circleci/node:12.18.4
-    working_directory: ~/backend
     steps:
       - checkout
-      - run: npm install --save
-      - run: npm test
+      - run:
+        command: |
+          cd backend
+          npm install --save
+          npm test
 
 # Orchestrate our job run sequence
 workflows:
