@@ -10,6 +10,6 @@ jobs:
       - run: npm test
 workflows:
   version: 2.1
-    oneTest:
+    construir:
       jobs:
         - construir
