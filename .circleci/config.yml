@@ -9,9 +9,9 @@ jobs:
       - checkout
       - run:
         command: |
-        cd backend
-        npm install --save
-        npm test
+          cd backend
+          npm install --save
+          npm test
 
 # Orchestrate our job run sequence
 workflows:
