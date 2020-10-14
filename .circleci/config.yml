@@ -1,14 +1,20 @@
 version: 2.1
 jobs:
-  construir:
+  run_test:
     docker:
-      - image: circleci/node:12.18.4
+      - image: circleci/node:12.18.3
     steps:
       - checkout
       - run: cd backend
-      - run: npm install
-      - run: npm test
+      - run:
+        name: install npm dependencies
+        command: |
+          npm install
+       - run:
+        name: run test
+        command: |
+          npm test
 workflows:
-  version: 2.1
+  build_test:
       jobs:
-        - construir
+        - run_test
