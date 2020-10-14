@@ -1,15 +1,13 @@
 version: 2.1
 jobs:
-  build:
+  construir:
     docker:
       - image: circleci/node:12.18.4
     steps:
       - checkout
-      - run:
-          command: cd backend
+      - run: cd backend
       - run: npm install
       - run: npm test
-
 workflows:
   jobs:
-    - build
+    - construir
