@@ -10,6 +10,5 @@ jobs:
       - run: npm test
 workflows:
   version: 2.1
-    construir:
       jobs:
         - construir
