@@ -7,7 +7,7 @@ jobs:
     - checkout
     - run: cd backend
     - run:
-        name: install npm dependencies
+      name: install npm dependencies
       command: |
         npm install
     - run:
