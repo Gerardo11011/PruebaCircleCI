@@ -2,15 +2,15 @@ version: 2.1
 jobs:
   run_test:
     docker:
-      - image: circleci/node:10
+      - image: "circleci/node:10"
   steps:
     - checkout
     - run: cd backend
-    - run:
+    - run: null
       name: install npm dependencies
       command: |
         npm install
-    - run:
+    - run: null
       name: run test
       command: |
         npm test
