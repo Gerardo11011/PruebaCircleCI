@@ -8,6 +8,7 @@ jobs:
     steps:
       - checkout
       - run: cd backend
+      - checkout
       - run: npm install --save
       - run: npm test
 
