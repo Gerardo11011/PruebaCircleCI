@@ -11,6 +11,5 @@ jobs:
       - run: npm test
 
 workflows:
-  node-tests:
-    jobs:
-      - node/test
+  jobs:
+    - node/test
